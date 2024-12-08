@@ -1,7 +1,56 @@
 public class StarPatterns {
 
     public static void main(String[] args) {
-        Pattern9(5);
+        Pattern12(5);
+    }
+
+    static void Pattern13(int n){
+        for (int row = 1; row <=n ; row++) {
+
+
+            System.out.println();
+
+        }
+    }
+
+    static void Pattern12(int n){
+
+        for (int row = 1; row <= 2*n ; row++) {
+            int column = row>n ? row-n:n-row+1;
+            int noOfSpaces = row>n?2*n-row:row-1;
+
+            for (int i = 1; i <=noOfSpaces ; i++) {
+                System.out.print(" ");
+            }
+
+            for (int col = column; col >=1 ; col--) {
+                System.out.print("* ");
+
+            }
+
+            System.out.println();
+        }
+
+    }
+
+    static void Pattern11(int n){
+
+        for (int row = 1; row <= n ; row++) {
+            int noOfSpaces = row-1;
+
+            for (int i = 1; i <=noOfSpaces ; i++) {
+                System.out.print(" ");
+            }
+
+            for (int col = n-row+1; col >=1 ; col--) {
+                System.out.print("* ");
+
+            }
+
+            System.out.println();
+
+        }
+
     }
 
     static void Pattern1(int n){
@@ -132,6 +181,28 @@ public class StarPatterns {
             System.out.println();
         }
     }
+
+    static void Pattern10(int n){
+
+        for (int row = 1; row <= n ; row++) {
+            int noOfSpaces = n-row+1;
+
+            for (int i = 1; i <+noOfSpaces ; i++) {
+                System.out.print(" ");
+            }
+
+            for (int col = 1; col <=row ; col++) {
+                System.out.print("* ");
+
+            }
+
+            System.out.println();
+
+        }
+
+    }
+
+
 
 
 
